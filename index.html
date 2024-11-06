@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step-Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="./js/main.js"></script>
+
+
+</head>
+<body>
+
+   <section class="sec">   
+
+<div class="main">
+
+<div class="leftdiv">
+
+<div class="step">
+  <div class="friststep">
+    <span class="circle active">1</span>
+    <div class="text">
+      <p class="step1">STEP 1</p>
+      <p class="info">YOUR INFO</p>
+    </div>
+  </div>
+
+  <div class="friststep">
+    <span class="circle">2</span>
+    <div class="text">
+      <p class="step1">STEP 2</p>
+      <p class="info">SELECT PLAN</p>
+    </div>
+  </div>
+
+  <div class="friststep">
+    <span class="circle">3</span>
+    <div class="text">
+      <p class="step1">STEP 3</p>
+      <p class="info">ADD-ONS</p>
+    </div>
+  </div>
+
+
+  <div class="friststep">
+    <span class="circle">4</span>
+    <div class="text">
+      <p class="step1">STEP 4</p>
+      <p class="info">SUMMARY</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<div class="rightdiv">
+
+<div class="alldiv" id="alldiv">
+
+  <div class="div div-active">
+
+    <div class="topdiv">
+      <p class="text1">Personal info</p>
+      <p class="text2">Please provide your name, email address, and phone number.</p>
+    </div>
+<div class="form">
+<div class="fristlabel">
+  <label>name</label>
+  <input type="text" placeholder="enter your name">
+</div>
+<div class="fristlabel">
+  <label>email address</label>
+  <input type="text" placeholder="enter your email">
+</div>
+<div class="fristlabel">
+  <label>phone number</label>
+  <input type="text" placeholder="enter your phone number">
+</div>
+    </div>
+    <div class="nextbtn">
+      <button class="next">next step</button>
+    </div>
+  
+  </div>
+
+
+  <div class="div">
+    <div class="topdiv">
+      <p class="text1">Select your plan</p>
+      <p class="text2">You have the option of monthly or yearly billing.</p>
+    </div>
+  
+  <div class="allbox">
+    <div class="fristbox">
+      <div>
+        <img class="img" src="./images/icon-arcade.svg" alt="">
+      </div>
+      <div class="alltext">
+        <p class="text3">Arcade</p>
+        <p class="month">$9/mo</p>
+      </div>
+    </div>
+    <div class="fristbox box">
+      <div>
+        <img class="img" src="./images/icon-advanced.svg" alt="">
+      </div>
+      <div class="alltext">
+        <p class="text3">Advanced</p>
+        <p class="month">$12/mo</p>
+      </div>
+    </div>
+    <div class="fristbox box line">
+      <div>
+        <img class="img" src="./images/icon-pro.svg" alt="">
+      </div>
+      <div class="alltext">
+        <p class="text3">Pro</p>
+        <p class="month">$5/mo</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="check">
+    <span>Monthly</span>
+    <div class="checkbox">
+      <input type="radio">
+    </div>
+  
+    <span class="year">Yearly</span>
+  </div>
+  
+  <div class="allbtn">
+    <button class="back">Go Back</button>
+    <button class="next">next step</button>
+  </div> 
+  
+  
+  </div>
+
+    <div class="div">
+      <div class="topdiv">
+        <p class="text1">Pick add-ons</p>
+        <p class="text2 add">Add-ons help enhance your gaming experience.</p>
+      </div>
+    
+    <div class="middiv">
+      <div class="allrec">
+    
+        <div class="fristrec">
+    
+          <div class="leftrec">
+    
+            <div class="mark">
+            <img src="./images/icon-checkmark.svg" alt="">
+            </div>
+            
+    
+            <div class="lefttext">
+              <p class="text3">Online service</p>
+              <p class="access">Access to multiplayer games</p>
+            </div>
+    
+          </div>
+          <div class="rightrec">
+            <p>+$1/mo</p>
+          </div>
+    
+        </div>
+    
+        <div class="fristrec">
+    
+          <div class="leftrec">
+    
+            <div class="mark">
+            <img src="./images/icon-checkmark.svg" alt="">
+            </div>
+            
+    
+            <div class="lefttext">
+              <p class="text3">Larger storage</p>
+              <p class="access">Extra 1TB of cloud save</p>
+            </div>
+    
+          </div>
+          <div class="rightrec">
+            <p>+$2/mo</p>
+          </div>
+    
+        </div>
+    
+    
+        <div class="fristrec" id="fristrec">
+    
+          <div class="leftrec">
+    
+            <div class="mark markcheck" id="markcheck">
+          
+            </div>
+            
+    
+            <div class="lefttext">
+              <p class="text3">Customizable Profile</p>
+              <p class="access">Custom theme on your profile</p>
+            </div>
+    
+          </div>
+          <div class="rightrec">
+            <p>+$2/mo</p>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    
+    </div>
+    
+    
+    <div class="allbtn">
+      <button class="back" id="btn1">Go Back</button>
+      <button class="next">next step</button>
+    </div> 
+    
+    
+    </div>
+
+
+<div class="div">
+  <div class="topdiv">
+    <p class="text1">Finishing up</p>
+    <p class="text2">Double-check everything looks OK before confirming.</p>
+  </div>
+
+<div class="centerdiv">
+
+<div class="topcenterdiv">
+
+  <div class="fristcenterdiv">
+
+    <div class="leftcenter">
+      <p class="text3">Arcade (Monthly)</p>
+      <p class="change">Change</p>
+    </div>
+    <div class="rightcenter">
+      <p class="text3">$9/mo</p>
+    </div>
+    
+  </div>
+
+  <hr>
+
+  <div class="allsecondcenter">
+    <div class="secondcenter">
+      <p class="text2">Online service</p>
+      <p class="dollar">+$1/mo</p>
+    </div>
+    <div class="secondcenter">
+      <p class="text2">Larger storage</p>
+      <p class="dollar">+$2/mo</p>
+    </div>
+  </div>
+  
+  </div>
+
+<div class="bottomcenterdiv">
+  <p class="text2">Total (per month)</p>
+  <p class="date">+$12/mo</p>
+</div>
+</div>
+
+
+<div class="allbtn">
+  <button class="back" id="btn2">Go Back</button>
+  <button class="next" id="nextbtn">next step</button>
+</div> 
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+   </section>  
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
